@@ -1,15 +1,9 @@
 import ActionTypes from '../constans';
 
-// const defaultState = {
-//   credentials: {},
-//   authenticated: false,
-//   selectedRoomId: 0,
-// };
-
-const todoReducer = (state = {}, action) => {
+const todoReducer = (state = [], action) => {
   switch (action.type) {
-    case ActionTypes.fetchTodo:
-      return { ...state ,todo: [] };
+    case ActionTypes.createTodo:
+      return [...state, { text: action.text }]
     default:
       return state;
   }

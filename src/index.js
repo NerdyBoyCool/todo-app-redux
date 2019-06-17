@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import reducer from './reducers'
 
 import { Grommet } from 'grommet';
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 const store = createStore(
